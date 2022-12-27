@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${show.getTask()}"></p>
+<p th:text="${show.getId()}"></p>
+<a th:href="@{/task/{id}/edit(id=${show.getId()})}">click edit</a>
+<form th:method="DELETE" th:action="@{/task/{id}(id=${show.getId()})}">
+    <input type="submit" value="Delete"/>
+</form>
+</body>
+</html>

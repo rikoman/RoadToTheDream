@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/task}" th:object="${task}">
+    <label for="task">Task</label>
+    <input type="text" th:field="*{task}" id="task"/>
+    <br>
+    <input type="submit" value="Create!" />
+<!--    <label for="surname">SurName</label>-->
+<!--    <input type="text" th:field="*{surname}" id="surname"/>-->
+<!--     -->
+</form>
+</body>
+</html>
